@@ -19,6 +19,7 @@ finish-args:
   - --filesystem=xdg-videos:ro
   - --filesystem=xdg-documents:ro
   - --talk-name=org.freedesktop.Notifications
+  - --talk-name=org.kde.StatusNotifierWatcher
 modules:
   - name: franz-desktop
     buildsystem: simple
