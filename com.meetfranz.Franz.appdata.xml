@@ -22,14 +22,14 @@
   </screenshots>
   <releases>
     <release version="5.2.0" date="2019-07-19">
-			<description>
+      <description>
         <p>Features:</p>
-				<ul>
-					<li>Service: You can now add any custom website 🥳</li>
-				</ul>
+        <ul>
+          <li>Service: You can now add any custom website 🥳</li>
+        </ul>
         <p>Bug Fixes:</p>
-				<ul>
-					<li>Notifications: Don't show notification badges when app is muted</li>
+        <ul>
+          <li>Notifications: Don't show notification badges when app is muted</li>
           <li>Settings: Fix position of settings window</li>
           <li>Recipes: Fix recipe install when directly accessing recipe e.g. via url</li>
           <li>Proxy: Fix issue with service proxy authentication</li>
@@ -38,15 +38,15 @@
           <li>Windows: Replace tray icon with high-res version</li>
           <li>Workspaces: Fix service reordering within workspaces</li>
           <li>Workspaces: Fix issue with service visibility after downgrade</li>
-				</ul>
+        </ul>
         <p>General:</p>
-				<ul>
+        <ul>
           <li>App: Improved email validation</li>
           <li>App: Update electron to 4.2.4</li>
           <li>Translations: Improved translations. A million thanks to the amazing community.</li>
-				</ul>
-			</description>
-		</release>
+        </ul>
+      </description>
+    </release>
     <release version="5.1.0" date="2019-04-25"/>
   </releases>
   <content_rating type="oars-1.1">
