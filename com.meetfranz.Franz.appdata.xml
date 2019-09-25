@@ -21,6 +21,23 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="5.3.3" date="2019-09-17">
+      <description>
+        <p>Features:</p>
+        <ul>
+          <li>Todos: Highlight Franz Todos icon in sidebar when the Franz Todos panel is opened</li>
+        </ul>
+        <p>Bug Fixes:</p>
+        <ul>
+          <li>Spellchecker: Fix disabling spellchecker after app start</li>
+          <li>Windows: Fix window menu to get overwritten by Todos menu</li>
+        </ul>
+        <p>General:</p>
+        <ul>
+          <li>Translations: Improved translations. A million thanks to the amazing community.</li>
+        </ul>
+      </description>
+    </release>
     <release version="5.2.0" date="2019-07-19">
       <description>
         <p>Features:</p>
