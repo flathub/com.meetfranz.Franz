@@ -31,7 +31,7 @@ modules:
       - cp -r usr/* opt/* /app
       - chmod -R a-s,go+rX,go-w /app/Franz
       - rm -r /app/share/icons/hicolor/1024x1024
-      - desktop-file-edit --set-key=Exec --set-value='franz %U' /app/share/applications/franz.desktop
+      - desktop-file-edit --set-key=Exec --set-value='franz --no-sandbox %U' /app/share/applications/franz.desktop
       - install franz.sh /app/bin/franz
       - install -Dm644 com.meetfranz.Franz.appdata.xml /app/share/appdata/com.meetfranz.Franz.appdata.xml
     sources:
