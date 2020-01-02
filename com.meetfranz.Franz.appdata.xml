@@ -21,6 +21,37 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="5.4.1" date="2019-10-31">
+      <description>
+        <p>Features:</p>
+        <ul>
+          <li>Custom Websites: Added navigation bar for "Custom Website" service</li>
+          <li>Mac: Open Franz window with Cmd+1</li>
+          <li>Todos: Allow Franz Todos to open links in browser</li>
+          <li>Service API: Share team, url and hasCustomIcon with service</li>
+          <li>App Start: Only load workspace related services</li>
+        </ul>
+        <p>Bug Fixes:</p>
+        <ul>
+          <li>Services: Restore services after 10 minutes system suspension</li>
+          <li>Workspaces: Allow scrolling in Workspaces drawer</li>
+          <li>Spell check: fix(Spell checker): Fix disable spell checker</li>
+          <li>App: Fix "Paste And Match Style"</li>
+          <li>macOS: Only show services in Touch Bar that should be visible</li>
+          <li>Service Proxies: Fix proxy setting rehydration</li>
+          <li>Settings: Fix cache size calculation after clearing cache</li>
+          <li>Spell check: Fix spell checker to initialize without loaded dictionary</li>
+          <li>Spell check: Fix "undefined" language in context menu</li>
+          <li>App: Fix Basic Auth overlay background in Dark Mode</li>
+          <li>macOS Catalina: Fix issue with app notarization</li>
+        </ul>
+        <p>General:</p>
+        <ul>
+          <li>App: Updated electron to 6.0.11</li>
+          <li>Translations: Improved translations.</li>
+        </ul>
+      </description>
+    </release>
     <release version="5.3.3" date="2019-09-17">
       <description>
         <p>Features:</p>
