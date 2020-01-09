@@ -31,15 +31,15 @@ modules:
       - cp -r usr/* opt/* /app
       - chmod -R a-s,go+rX,go-w /app/Franz
       - rm -r /app/share/icons/hicolor/1024x1024
-      - desktop-file-edit --set-key=Exec --set-value='franz %U' /app/share/applications/franz.desktop
+      - desktop-file-edit --set-key=Exec --set-value='franz --no-sandbox %U' /app/share/applications/franz.desktop
       - install franz.sh /app/bin/franz
       - install -Dm644 com.meetfranz.Franz.appdata.xml /app/share/appdata/com.meetfranz.Franz.appdata.xml
     sources:
       - type: file
         only-arches:
           - x86_64
-        url: https://github.com/meetfranz/franz/releases/download/v5.3.3/franz_5.3.3_amd64.deb
-        sha256: a18a90d075279a906671228a4015fca4c1185ec4b7987242f23272c1ee0b310e
+        url: https://github.com/meetfranz/franz/releases/download/v5.4.1/franz_5.4.1_amd64.deb
+        sha256: d0f00a86f19c0011440ee7d3ca983993407c0f24cc518d2f0c08d054e52f3fbc
       - type: script
         dest-filename: franz.sh
         commands:
