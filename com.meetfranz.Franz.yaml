@@ -31,7 +31,7 @@ modules:
       - cp -r usr/* opt/* /app
       - chmod -R a-s,go+rX,go-w /app/Franz
       - rm -r /app/share/icons/hicolor/1024x1024
-      - desktop-file-edit --set-key=Exec --set-value='franz --no-sandbox %U' /app/share/applications/franz.desktop
+      - desktop-file-edit --set-key=Exec --set-value='franz %U' /app/share/applications/franz.desktop
       - install franz.sh /app/bin/franz
       - install -Dm644 com.meetfranz.Franz.appdata.xml /app/share/appdata/com.meetfranz.Franz.appdata.xml
     sources:
@@ -43,6 +43,7 @@ modules:
       - type: script
         dest-filename: franz.sh
         commands:
-          - exec env TMPDIR=$XDG_CACHE_HOME /app/Franz/franz "$@"
+          - export TMPDIR="$XDG_RUNTIME_DIR/app/$FLATPAK_ID"
+          - exec zypak-wrapper /app/Franz/franz "$@"
       - type: file
         path: com.meetfranz.Franz.appdata.xml
