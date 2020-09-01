@@ -21,6 +21,35 @@
     </screenshot>
   </screenshots>
   <releases>
+        <release version="5.5.0" date="2020-04-30">
+      <description>
+        <p>Features:</p>
+        <ul>
+          <li>Service: Add service hibernation to save system resources</li>
+          <li>App: Add FRANZ_APPDATA_DIR environment variable to customize the app settings directory</li>
+          <li>Service: Added service polling debugger when starting Franz with DEBUG=Franz:Service</li>
+        </ul>
+        <p>Bug Fixes:</p>
+        <ul>
+          <li>App: Update deprecated electron APIs</li>
+          <li>App: Fix Zoom in services</li>
+          <li>macOS: Add audio &amp; video permission request for macOS Catalina</li>
+          <li>Experimental: Fix Google signin</li>
+          <li>macOS: Ask the user to move Franz to the /Applications Folder to fix read/write issues</li>
+          <li>macOS: Fix microphone, camera &amp; screen sharing permissions</li>
+          <li>Service: Add integrity checks to prevent services recipes getting lost</li>
+          <li>Service: Fix issue with user agent override in service workers</li>
+          <li>Service: Don't reload services after 10 minute system nap</li>
+          <li>App: Fix "Missing Service" link</li>
+          <li>App: Improve lost recipe connection handler</li>
+        </ul>
+        <p>General:</p>
+        <ul>
+          <li>App: Updated electron to 8.1.1</li>
+          <li>Translations: Improved translations. A million thanks to the amazing community.</li>
+        </ul>
+      </description>
+    </release>
     <release version="5.4.1" date="2019-10-31">
       <description>
         <p>Features:</p>
