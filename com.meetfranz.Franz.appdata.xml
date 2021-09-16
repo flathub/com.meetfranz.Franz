@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop">
   <id>com.meetfranz.Franz</id>
-  <launchable>com.meetfranz.Franz.desktop</launchable>>
+  <launchable type="desktop-id">com.meetfranz.Franz.desktop</launchable>
   <name>Franz</name>
   <project_license>Apache-2.0</project_license>
   <developer_name>Stefan Maizner</developer_name>
@@ -21,7 +21,25 @@
     </screenshot>
   </screenshots>
   <releases>
-        <release version="5.5.0" date="2020-04-30">
+    <release version="5.7.0" date="2021-06-14">
+      <description>
+        <p>Features:</p>
+        <ul>
+          <li>App: Add support for screen sharing during video calls</li>
+        </ul>
+        <p>Bug Fixes:</p>
+        <ul>
+          <li>App: Fix app focus detection</li>
+	  <li>App: Various bugfixes and improvements</li>
+        </ul>
+        <p>General:</p>
+        <ul>
+          <li>App: Update electron to 12.0.6</li>
+          <li>Translations: Improved translations. A million thanks to the amazing community.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="5.5.0" date="2020-04-30">
       <description>
         <p>Features:</p>
         <ul>
