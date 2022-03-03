@@ -21,6 +21,31 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="5.8.0" date="2022-02-17">
+      <description>
+        <p>Bug Fixes:</p>
+        <ul>
+          <li>App: Fix potential memory leak with full screen event listeners</li>
+	        <li>macOS: Make tray icon color dynamic</li>
+          <li>macOS: Fix Do Not Disturb System check for macOS Monterey</li>
+          <li>Windows: Fix menu bar styling</li>
+          <li>Gmail: Fix auto suggest, calendar invites and other Google service integrations</li>
+          <li>Microsoft Teams: Fix issue that prevents loading chats</li>
+        </ul>
+        <p>Features:</p>
+        <ul>
+          <li>Service: Add modifyRequestHeaders for service recipes</li>
+          <li>App: Remove Google Analytics</li>
+          <li>Service Recipes: Add Franz.clearCache() method to clear service cache</li>
+        </ul>
+        <p>General:</p>
+        <ul>
+          <li>App: Update electron to 14.2.2</li>
+          <li>App: Various improvements all over the app</li>
+          <li>Translations: Improved translations. A million thanks to the amazing community.</li>
+        </ul>
+      </description>
+    </release>
     <release version="5.7.0" date="2021-06-14">
       <description>
         <p>Features:</p>
@@ -30,7 +55,7 @@
         <p>Bug Fixes:</p>
         <ul>
           <li>App: Fix app focus detection</li>
-	  <li>App: Various bugfixes and improvements</li>
+	        <li>App: Various bugfixes and improvements</li>
         </ul>
         <p>General:</p>
         <ul>
