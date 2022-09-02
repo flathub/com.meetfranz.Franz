@@ -21,6 +21,14 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="5.9.1" date="2022-04-04">
+      <description>
+        <p>Bug Fixes:</p>
+        <ul>
+          <li>macOS: Fix auto updater on macOS</li>
+        </ul>
+      </description>
+    </release>
     <release version="5.8.0" date="2022-02-17">
       <description>
         <p>Bug Fixes:</p>
