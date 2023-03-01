@@ -21,6 +21,25 @@
     </screenshot>
   </screenshots>
   <releases>
+  <release version="5.9.2" date="2022-04-19">
+      <description>
+        <p>Bug Fixes:</p>
+        <ul>
+          <li>Service: Apply Google login fix for all services</li>
+          <li>App: Don't reload app when coming back from system sleep</li>
+          <li>Windows + Linux: Introduce new Franz Menu</li>
+          <li>App: Improve layout rendering of services</li>
+          <li>Todos: Fix Todos to be resizable again</li>
+          <li>Todos: Fix Todos layout issues when Todos should be hidden</li>
+          <li>App: Don't let the app get confused by unknown routes</li>
+        </ul>
+        <p>Features:</p>
+        <ul>
+          <li>App: Lock user agents to Windows 10 and macOS 10.15.17 to avoid fingerprinting identification</li>
+          <li>App: Update to electron 18</li>
+        </ul>
+      </description>
+    </release>
     <release version="5.9.1" date="2022-04-04">
       <description>
         <p>Bug Fixes:</p>
