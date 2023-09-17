@@ -25,7 +25,7 @@
       <description>
         <p>Bug Fixes:</p>
         <ul>
-          <li>fix automatic spellcheck language detection</li>
+          <li>Fix automatic spellcheck language detection</li>
           <li>Fix crash when Todos view is not initialized</li>
           <li>Fix issue where service can't be initialized when spellchecking language is not set</li>
           <li>Remove screen id from share screen dialogue</li>
