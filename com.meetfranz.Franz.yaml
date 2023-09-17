@@ -38,8 +38,8 @@ modules:
       - type: file
         only-arches:
           - x86_64
-        url: https://github.com/meetfranz/franz/releases/download/v5.9.2/franz_5.9.2_amd64.deb
-        sha256: 5bfeb483909b49465c3404a375b892ec336ff77ef91a27ac106eb440b2c08758
+        url: https://github.com/meetfranz/franz/releases/download/v5.10.0/franz_5.10.0_amd64.deb
+        sha256: cd0859971afb932316c7ab710e757e102053cd51309d4681b0b58a272dd76058
       - type: script
         dest-filename: franz.sh
         commands:
