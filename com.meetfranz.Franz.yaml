@@ -1,15 +1,16 @@
 app-id: com.meetfranz.Franz
 base: org.electronjs.Electron2.BaseApp
-base-version: '22.08'
+base-version: '25.08'
 runtime: org.freedesktop.Platform
-runtime-version: '22.08'
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 command: franz
 separate-locales: false
 rename-desktop-file: franz.desktop
 rename-icon: franz
 finish-args:
-  - --socket=x11
+  - --socket=wayland
+  - --socket=fallback-x11
   - --share=ipc
   - --socket=pulseaudio
   - --share=network
@@ -38,8 +39,8 @@ modules:
       - type: file
         only-arches:
           - x86_64
-        url: https://github.com/meetfranz/franz/releases/download/v5.10.0/franz_5.10.0_amd64.deb
-        sha256: cd0859971afb932316c7ab710e757e102053cd51309d4681b0b58a272dd76058
+        url: https://github.com/meetfranz/franz/releases/download/v5.11.0/franz_5.11.0_amd64.deb
+        sha256: e3e1de1fd958e7fd9fb304b0ccc3ccd48765963d35cd4ee79a52ce3187dc4ac5
       - type: script
         dest-filename: franz.sh
         commands:
