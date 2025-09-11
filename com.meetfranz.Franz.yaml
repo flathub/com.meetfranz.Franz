@@ -9,8 +9,7 @@ separate-locales: false
 rename-desktop-file: franz.desktop
 rename-icon: franz
 finish-args:
-  - --socket=wayland
-  - --socket=fallback-x11
+  - --socket=x11
   - --share=ipc
   - --socket=pulseaudio
   - --share=network
