@@ -68,4 +68,11 @@
     <content_attribute id="money-gambling">none</content_attribute>
   </content_rating>
   <update_contact>sakcheen+flathub_AT_gmail.com</update_contact>
+  <keywords>
+    <keyword>slack</keyword>
+    <keyword>instant messaging</keyword>
+    <keyword>whatsapp</keyword>
+    <keyword>team communication</keyword>
+    <keyword>messaging app</keyword>
+  </keywords>
 </component>
