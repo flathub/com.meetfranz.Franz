@@ -17,7 +17,8 @@
   </description>
   <screenshots>
     <screenshot type="default">
-      <image type="source">https://meetfranz.com/static/images/franz-screenshot.png</image>
+      <caption>Franz 6 — multiple services in a single window</caption>
+      <image type="source">https://raw.githubusercontent.com/flathub/com.meetfranz.Franz/master/franz-screenshot.png</image>
     </screenshot>
   </screenshots>
   <releases>
