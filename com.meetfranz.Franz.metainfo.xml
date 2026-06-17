@@ -1,26 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<component type="desktop">
+<component type="desktop-application">
   <id>com.meetfranz.Franz</id>
   <launchable type="desktop-id">com.meetfranz.Franz.desktop</launchable>
-  <name>Franz</name>
-  <project_license>LicenseRef-proprietary</project_license>
-  <developer_name>Stefan Malzner</developer_name>
-  <summary>Messaging app that combines chat, mail, and AI assistance into one window</summary>
   <metadata_license>CC0-1.0</metadata_license>
-  <url type="homepage">https://meetfranz.com/</url>
-  <url type="bugtracker">https://github.com/meetfranz/franz-6/issues</url>
-  <url type="help">https://meetfranz.com/support</url>
+  <project_license>LicenseRef-proprietary</project_license>
+
+  <name>Franz</name>
+  <summary>All your messaging in one app</summary>
+
+  <developer id="com.meetfranz">
+    <name>Stefan Malzner</name>
+  </developer>
+
   <description>
     <p>
-      Franz brings the messaging, email, and AI services you use every day into a single, focused window. Run Slack, WhatsApp, Telegram, Microsoft Teams, Discord, Signal, Gmail, Outlook, and many more side-by-side, with a built-in mail client and an on-device AI assistant that helps you triage, summarise, and respond without juggling separate apps.
+      Franz brings WhatsApp, Slack, Telegram, Signal, Gmail, Outlook and many more
+      messaging and email services together in a single desktop app, so you can keep
+      every conversation in one place instead of juggling browser tabs and native apps.
     </p>
+    <p>Features:</p>
+    <ul>
+      <li>Combine dozens of chat and email services in one window</li>
+      <li>Organize services into workspaces for work, personal and side projects</li>
+      <li>AI-powered summaries and a privacy-conscious assistant with local model support</li>
+      <li>Native Signal integration and WhatsApp support</li>
+      <li>Notifications, unread badges and quiet hours across every service</li>
+    </ul>
   </description>
+
+  <categories>
+    <category>Network</category>
+    <category>InstantMessaging</category>
+    <category>Chat</category>
+  </categories>
+
+  <keywords>
+    <keyword>messaging</keyword>
+    <keyword>chat</keyword>
+    <keyword>email</keyword>
+    <keyword>ai assistant</keyword>
+    <keyword>whatsapp</keyword>
+    <keyword>slack</keyword>
+    <keyword>telegram</keyword>
+    <keyword>signal</keyword>
+    <keyword>discord</keyword>
+    <keyword>teams</keyword>
+    <keyword>gmail</keyword>
+    <keyword>outlook</keyword>
+  </keywords>
+
+  <url type="homepage">https://meetfranz.com</url>
+  <url type="bugtracker">https://github.com/meetfranz/franz-6/issues</url>
+  <url type="help">https://meetfranz.com/help</url>
+
   <screenshots>
     <screenshot type="default">
-      <caption>Franz 6 — multiple services in a single window</caption>
-      <image type="source">https://raw.githubusercontent.com/flathub/com.meetfranz.Franz/master/franz-screenshot.png</image>
+      <caption>The unified inbox — emails from every account in one place</caption>
+      <image type="source">https://meetfranz.com/flathub/screenshots/inbox.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>All your messaging services side-by-side</caption>
+      <image type="source">https://meetfranz.com/flathub/screenshots/services.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>The Franz Assistant — AI summaries with a privacy-conscious assistant</caption>
+      <image type="source">https://meetfranz.com/flathub/screenshots/ai.png</image>
     </screenshot>
   </screenshots>
+
+  <content_rating type="oars-1.1">
+    <content_attribute id="violence-cartoon">none</content_attribute>
+    <content_attribute id="violence-fantasy">none</content_attribute>
+    <content_attribute id="violence-realistic">none</content_attribute>
+    <content_attribute id="violence-bloodshed">none</content_attribute>
+    <content_attribute id="violence-sexual">none</content_attribute>
+    <content_attribute id="violence-desecration">none</content_attribute>
+    <content_attribute id="violence-slavery">none</content_attribute>
+    <content_attribute id="violence-worship">none</content_attribute>
+    <content_attribute id="drugs-alcohol">none</content_attribute>
+    <content_attribute id="drugs-narcotics">none</content_attribute>
+    <content_attribute id="drugs-tobacco">none</content_attribute>
+    <content_attribute id="sex-nudity">none</content_attribute>
+    <content_attribute id="sex-themes">none</content_attribute>
+    <content_attribute id="sex-homosexuality">none</content_attribute>
+    <content_attribute id="sex-prostitution">none</content_attribute>
+    <content_attribute id="sex-adultery">none</content_attribute>
+    <content_attribute id="sex-appearance">none</content_attribute>
+    <content_attribute id="language-profanity">none</content_attribute>
+    <content_attribute id="language-humor">none</content_attribute>
+    <content_attribute id="language-discrimination">none</content_attribute>
+    <content_attribute id="social-chat">intense</content_attribute>
+    <content_attribute id="social-info">moderate</content_attribute>
+    <content_attribute id="social-audio">intense</content_attribute>
+    <content_attribute id="social-location">none</content_attribute>
+    <content_attribute id="social-contacts">intense</content_attribute>
+    <content_attribute id="money-purchasing">none</content_attribute>
+    <content_attribute id="money-gambling">none</content_attribute>
+  </content_rating>
+
   <releases>
     <release version="6.3.1" date="2026-06-12">
       <description>
@@ -160,49 +237,6 @@
     </release>
     <release version="5.11.0" date="2025-04-09"></release>
   </releases>
-  <content_rating type="oars-1.1">
-    <content_attribute id="violence-cartoon">none</content_attribute>
-    <content_attribute id="violence-fantasy">none</content_attribute>
-    <content_attribute id="violence-realistic">none</content_attribute>
-    <content_attribute id="violence-bloodshed">none</content_attribute>
-    <content_attribute id="violence-sexual">none</content_attribute>
-    <content_attribute id="violence-desecration">none</content_attribute>
-    <content_attribute id="violence-slavery">none</content_attribute>
-    <content_attribute id="violence-worship">none</content_attribute>
-    <content_attribute id="drugs-alcohol">none</content_attribute>
-    <content_attribute id="drugs-narcotics">none</content_attribute>
-    <content_attribute id="drugs-tobacco">none</content_attribute>
-    <content_attribute id="sex-nudity">none</content_attribute>
-    <content_attribute id="sex-themes">none</content_attribute>
-    <content_attribute id="sex-homosexuality">none</content_attribute>
-    <content_attribute id="sex-prostitution">none</content_attribute>
-    <content_attribute id="sex-adultery">none</content_attribute>
-    <content_attribute id="sex-appearance">none</content_attribute>
-    <content_attribute id="language-profanity">none</content_attribute>
-    <content_attribute id="language-humor">none</content_attribute>
-    <content_attribute id="language-discrimination">none</content_attribute>
-    <content_attribute id="social-chat">intense</content_attribute>
-    <content_attribute id="social-info">none</content_attribute>
-    <content_attribute id="social-audio">intense</content_attribute>
-    <content_attribute id="social-location">none</content_attribute>
-    <content_attribute id="social-contacts">intense</content_attribute>
-    <content_attribute id="money-purchasing">none</content_attribute>
-    <content_attribute id="money-gambling">none</content_attribute>
-  </content_rating>
+
   <update_contact>support+flathub_AT_meetfranz.com</update_contact>
-  <keywords>
-    <keyword>slack</keyword>
-    <keyword>whatsapp</keyword>
-    <keyword>telegram</keyword>
-    <keyword>signal</keyword>
-    <keyword>discord</keyword>
-    <keyword>teams</keyword>
-    <keyword>gmail</keyword>
-    <keyword>outlook</keyword>
-    <keyword>instant messaging</keyword>
-    <keyword>team communication</keyword>
-    <keyword>messaging app</keyword>
-    <keyword>email</keyword>
-    <keyword>ai assistant</keyword>
-  </keywords>
 </component>
