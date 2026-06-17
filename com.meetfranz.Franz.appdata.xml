@@ -3,16 +3,16 @@
   <id>com.meetfranz.Franz</id>
   <launchable type="desktop-id">com.meetfranz.Franz.desktop</launchable>
   <name>Franz</name>
-  <project_license>Apache-2.0</project_license>
-  <developer_name>Stefan Maizner</developer_name>
-  <summary>Messenger for the desktop</summary>
+  <project_license>LicenseRef-proprietary</project_license>
+  <developer_name>Stefan Malzner</developer_name>
+  <summary>Messaging app that combines chat, mail, and AI assistance into one window</summary>
   <metadata_license>CC0-1.0</metadata_license>
   <url type="homepage">https://meetfranz.com/</url>
-  <url type="bugtracker">https://github.com/meetfranz/franz/issues</url>
+  <url type="bugtracker">https://github.com/meetfranz/franz-6/issues</url>
   <url type="help">https://meetfranz.com/support</url>
   <description>
     <p>
-      Franz is your messaging app / former Emperor of Austria and combines chat and messaging services into one application. Franz currently supports Slack, WhatsApp, WeChat, HipChat, Facebook Messenger, Telegram, Google Hangouts,GroupMe, Skype and many more.
+      Franz brings the messaging, email, and AI services you use every day into a single, focused window. Run Slack, WhatsApp, Telegram, Microsoft Teams, Discord, Signal, Gmail, Outlook, and many more side-by-side, with a built-in mail client and an on-device AI assistant that helps you triage, summarise, and respond without juggling separate apps.
     </p>
   </description>
   <screenshots>
@@ -21,22 +21,143 @@
     </screenshot>
   </screenshots>
   <releases>
-	<release version="5.11.0" date="2025-04-09"></release>
-    <release version="5.10.0" date="2023-09-01">
+    <release version="6.3.1" date="2026-06-12">
       <description>
-        <p>Bug Fixes:</p>
+        <p>New:</p>
         <ul>
-          <li>Fix automatic spellcheck language detection</li>
-          <li>Fix crash when Todos view is not initialized</li>
-          <li>Fix issue where service can't be initialized when spellchecking language is not set</li>
-          <li>Remove screen id from share screen dialogue</li>
+          <li>Full right-to-left layout for Arabic, Hebrew, Farsi, and Urdu — sidebar, services, settings, popups, popped-out windows and previews all mirror to match the system text direction. The search field, email composer, and assistant align text correctly regardless of the app's display language.</li>
         </ul>
-        <p>Features:</p>
+        <p>Improved:</p>
         <ul>
-          <li>Update electron to 22.3.18</li>
+          <li>Unread badges in the horizontal tab bar are smaller and tidier.</li>
+        </ul>
+        <p>Fixed:</p>
+        <ul>
+          <li>Email drafts no longer lose their attachments when reopened.</li>
+          <li>Multi-paragraph emails are no longer squashed together in the composer.</li>
+          <li>A startup crash on some Windows machines is fixed.</li>
         </ul>
       </description>
     </release>
+    <release version="6.3.0" date="2026-06-09">
+      <description>
+        <p>New:</p>
+        <ul>
+          <li>French translation: the entire app — menus, settings, the email view, everything — is now available in French.</li>
+          <li>A new About page in Settings with an optional Beta program that follows your account across devices.</li>
+          <li>Link preview on hover, with ⌘/Ctrl/Shift+click to open the opposite of your usual setting.</li>
+        </ul>
+        <p>Improved:</p>
+        <ul>
+          <li>The workspace switcher and Privacy Shield now slide down inside the window instead of opening as separate popups.</li>
+        </ul>
+        <p>Fixed:</p>
+        <ul>
+          <li>Dark mode preference now persists across restarts.</li>
+          <li>Email sync no longer gets stuck.</li>
+          <li>Signal on Windows can complete its initial link.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="6.2.2" date="2026-06-02">
+      <description>
+        <p>Fixed:</p>
+        <ul>
+          <li>Franz no longer quits unexpectedly on Windows when syncing email attachments in the background. PDF text extraction now runs isolated from the main process.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="6.2.1" date="2026-06-02">
+      <description>
+        <p>Fixed:</p>
+        <ul>
+          <li>Windows auto-update installs and relaunches reliably again.</li>
+          <li>Window controls on extra windows (external links, email preview, popped-out services) are visible and correctly bound on Windows and Linux.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="6.2.0" date="2026-06-01">
+      <description>
+        <p>New:</p>
+        <ul>
+          <li>Ghosts — a dedicated view in Franz Mail that surfaces relationships cooling off (Cooling, Cold, Frozen). All computed on-device. Free plan shows the three warmest quiet relationships; Franz Pro opens the full list.</li>
+          <li>Bring-your-own Google Gemini key for the Pro AI assistant.</li>
+          <li>Cmd+K searches inside WhatsApp messages, not just chat names.</li>
+          <li>Overdue todos count toward the dock badge.</li>
+        </ul>
+        <p>Fixed:</p>
+        <ul>
+          <li>Draft handling, smoother reply sending, and pop-up window behaviour on Windows and Linux.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="6.1.0" date="2026-05-27">
+      <description>
+        <p>New:</p>
+        <ul>
+          <li>Franz 6 ships natively on Linux as AppImage, .deb, and snap on x64 and arm64. Native window decorations, system tray (KDE; GNOME via AppIndicator), autostart toggle that writes a proper XDG entry, live OS theme sync, and franz:// + mailto: handlers register the same way they do on macOS and Windows. Signal device-linking works on Linux arm64.</li>
+          <li>Mute all services button at the bottom of the sidebar; each service tab gets its own mute icon.</li>
+          <li>Email search reads the message body, not just the subject.</li>
+        </ul>
+        <p>Fixed:</p>
+        <ul>
+          <li>Frozen email folders, smart-reply line breaks, WhatsApp typing lag.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="6.0.4" date="2026-05-19">
+      <description>
+        <p>New:</p>
+        <ul>
+          <li>Structured catch-me-up briefings in Franz Assistant: emails grouped by Urgent / Important / Informational with summary cards and inline Reply/Snooze/Archive/Remind; todos grouped by Overdue / Due today / Upcoming with inline checkboxes.</li>
+          <li>Settings → Network toggle for managed corporate networks where Gmail or WhatsApp wouldn't load.</li>
+          <li>Inline images display inside HTML emails.</li>
+          <li>Help → "What's new in this version" opens an in-app summary.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="6.0.3" date="2026-05-16">
+      <description>
+        <p>Fixed:</p>
+        <ul>
+          <li>Gmail sign-in works again for consumer accounts.</li>
+          <li>Corporate authenticated-proxy networks no longer swallow Franz's outbound requests.</li>
+          <li>Mattermost and Rocket.Chat regain the Hosted / Self-hosted choice.</li>
+          <li>Signal opens cleanly on a fresh install.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="6.0.2" date="2026-05-13">
+      <description>
+        <p>New:</p>
+        <ul>
+          <li>Email accounts (Gmail / Outlook) sync across the devices you sign in on. Synced accounts arrive with a one-click Reconnect button.</li>
+          <li>Unverified-email banner with a Resend confirmation button; the Franz Assistant stays gated until the email is confirmed.</li>
+        </ul>
+        <p>Improved:</p>
+        <ul>
+          <li>Cross-machine setup no longer leaves the app in a half-signed-in state — an unreadable session asks you to sign in again.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="6.0.1" date="2026-05-10">
+      <description>
+        <p>Fixed:</p>
+        <ul>
+          <li>Sign-in on Windows after a cold start no longer hangs at the Cloudflare challenge.</li>
+          <li>Window controls on Windows: the new app-menu button stops overlapping the page-header icons.</li>
+          <li>Newly arrived emails in the global inbox flip from bold to read the moment you open them.</li>
+        </ul>
+      </description>
+    </release>
+    <release version="6.0.0" date="2026-05-09">
+      <description>
+        <p>
+          Franz 6 — the version that marks ten years of Franz. A from-the-ground-up rebuild combining messaging, mail, and AI into one window, designed around what a decade of stubborn iteration has taught us about how people actually use messengers.
+        </p>
+      </description>
+    </release>
+    <release version="5.11.0" date="2025-04-09"></release>
   </releases>
   <content_rating type="oars-1.1">
     <content_attribute id="violence-cartoon">none</content_attribute>
@@ -67,12 +188,20 @@
     <content_attribute id="money-purchasing">none</content_attribute>
     <content_attribute id="money-gambling">none</content_attribute>
   </content_rating>
-  <update_contact>sakcheen+flathub_AT_gmail.com</update_contact>
+  <update_contact>support+flathub_AT_meetfranz.com</update_contact>
   <keywords>
     <keyword>slack</keyword>
-    <keyword>instant messaging</keyword>
     <keyword>whatsapp</keyword>
+    <keyword>telegram</keyword>
+    <keyword>signal</keyword>
+    <keyword>discord</keyword>
+    <keyword>teams</keyword>
+    <keyword>gmail</keyword>
+    <keyword>outlook</keyword>
+    <keyword>instant messaging</keyword>
     <keyword>team communication</keyword>
     <keyword>messaging app</keyword>
+    <keyword>email</keyword>
+    <keyword>ai assistant</keyword>
   </keywords>
 </component>
