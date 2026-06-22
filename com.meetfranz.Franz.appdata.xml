@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop">
+  <id>com.meetfranz.Franz</id>
+  <launchable type="desktop-id">com.meetfranz.Franz.desktop</launchable>
+  <name>Franz</name>
+  <project_license>Apache-2.0</project_license>
+  <developer_name>Stefan Maizner</developer_name>
+  <summary>Messenger for the desktop</summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <url type="homepage">https://meetfranz.com/</url>
+  <url type="bugtracker">https://github.com/meetfranz/franz/issues</url>
+  <url type="help">https://meetfranz.com/support</url>
+  <description>
+    <p>
+      Franz is your messaging app / former Emperor of Austria and combines chat and messaging services into one application. Franz currently supports Slack, WhatsApp, WeChat, HipChat, Facebook Messenger, Telegram, Google Hangouts,GroupMe, Skype and many more.
+    </p>
+  </description>
+  <screenshots>
+    <screenshot type="default">
+      <image type="source">https://meetfranz.com/static/images/franz-screenshot.png</image>
+    </screenshot>
+  </screenshots>
+  <releases>
+    <release version="6.3.1" date="2026-06-12">
+      <description>
+        <p>Full right-to-left layout for Arabic, Hebrew, Farsi and Urdu. Smaller unread badges in the tab bar. Fixes for lost email-draft attachments, squashed multi-paragraph emails and a Windows startup crash.</p>
+      </description>
+    </release>
+    <release version="6.3.0" date="2026-06-09">
+      <description>
+        <p>French translation of the whole app. New About page with an optional Beta program. Link preview on hover. Dark-mode preference and email-sync fixes.</p>
+      </description>
+    </release>
+    <release version="6.2.0" date="2026-06-01">
+      <description>
+        <p>Ghosts view in Franz Mail surfaces cooling relationships, computed on-device. Bring-your-own Google Gemini key for the Pro assistant. Cmd+K searches inside WhatsApp messages.</p>
+      </description>
+    </release>
+    <release version="6.1.0" date="2026-05-27">
+      <description>
+        <p>Franz 6 ships natively on Linux as AppImage, .deb and snap on x64 and arm64, with system tray, autostart, live OS theme sync and franz:// / mailto: handlers. Mute-all-services button. Email search now reads the message body.</p>
+      </description>
+    </release>
+    <release version="6.0.0" date="2026-05-09">
+      <description>
+        <p>Franz 6 — a ground-up rebuild combining messaging, mail and AI in one window, marking ten years of Franz.</p>
+      </description>
+    </release>
+	<release version="5.11.0" date="2025-04-09"></release>
+    <release version="5.10.0" date="2023-09-01">
+      <description>
+        <p>Bug Fixes:</p>
+        <ul>
+          <li>Fix automatic spellcheck language detection</li>
+          <li>Fix crash when Todos view is not initialized</li>
+          <li>Fix issue where service can't be initialized when spellchecking language is not set</li>
+          <li>Remove screen id from share screen dialogue</li>
+        </ul>
+        <p>Features:</p>
+        <ul>
+          <li>Update electron to 22.3.18</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
+  <content_rating type="oars-1.1">
+    <content_attribute id="violence-cartoon">none</content_attribute>
+    <content_attribute id="violence-fantasy">none</content_attribute>
+    <content_attribute id="violence-realistic">none</content_attribute>
+    <content_attribute id="violence-bloodshed">none</content_attribute>
+    <content_attribute id="violence-sexual">none</content_attribute>
+    <content_attribute id="violence-desecration">none</content_attribute>
+    <content_attribute id="violence-slavery">none</content_attribute>
+    <content_attribute id="violence-worship">none</content_attribute>
+    <content_attribute id="drugs-alcohol">none</content_attribute>
+    <content_attribute id="drugs-narcotics">none</content_attribute>
+    <content_attribute id="drugs-tobacco">none</content_attribute>
+    <content_attribute id="sex-nudity">none</content_attribute>
+    <content_attribute id="sex-themes">none</content_attribute>
+    <content_attribute id="sex-homosexuality">none</content_attribute>
+    <content_attribute id="sex-prostitution">none</content_attribute>
+    <content_attribute id="sex-adultery">none</content_attribute>
+    <content_attribute id="sex-appearance">none</content_attribute>
+    <content_attribute id="language-profanity">none</content_attribute>
+    <content_attribute id="language-humor">none</content_attribute>
+    <content_attribute id="language-discrimination">none</content_attribute>
+    <content_attribute id="social-chat">intense</content_attribute>
+    <content_attribute id="social-info">none</content_attribute>
+    <content_attribute id="social-audio">intense</content_attribute>
+    <content_attribute id="social-location">none</content_attribute>
+    <content_attribute id="social-contacts">intense</content_attribute>
+    <content_attribute id="money-purchasing">none</content_attribute>
+    <content_attribute id="money-gambling">none</content_attribute>
+  </content_rating>
+  <update_contact>sakcheen+flathub_AT_gmail.com</update_contact>
+  <keywords>
+    <keyword>slack</keyword>
+    <keyword>instant messaging</keyword>
+    <keyword>whatsapp</keyword>
+    <keyword>team communication</keyword>
+    <keyword>messaging app</keyword>
+  </keywords>
+</component>

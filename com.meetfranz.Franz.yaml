@@ -33,7 +33,7 @@ modules:
       - rm -rf /app/share/icons/hicolor/1024x1024
       - desktop-file-edit --set-key=Exec --set-value='franz %U' /app/share/applications/franz.desktop
       - install franz.sh /app/bin/franz
-      - install -Dm644 com.meetfranz.Franz.metainfo.xml /app/share/metainfo/com.meetfranz.Franz.metainfo.xml
+      - install -Dm644 com.meetfranz.Franz.appdata.xml /app/share/appdata/com.meetfranz.Franz.appdata.xml
     sources:
       - type: file
         only-arches:
@@ -46,4 +46,4 @@ modules:
           - export TMPDIR="$XDG_RUNTIME_DIR/app/$FLATPAK_ID"
           - exec zypak-wrapper /app/Franz/franz "$@"
       - type: file
-        path: com.meetfranz.Franz.metainfo.xml
+        path: com.meetfranz.Franz.appdata.xml
