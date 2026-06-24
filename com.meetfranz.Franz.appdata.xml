@@ -17,10 +17,35 @@
   </description>
   <screenshots>
     <screenshot type="default">
-      <image type="source">https://meetfranz.com/static/images/franz-screenshot.png</image>
+      <image type="source">https://meetfranz.com/flathub/screenshots/inbox.png</image>
     </screenshot>
   </screenshots>
   <releases>
+    <release version="6.3.1" date="2026-06-12">
+      <description>
+        <p>Full right-to-left layout for Arabic, Hebrew, Farsi and Urdu. Smaller unread badges in the tab bar. Fixes for lost email-draft attachments, squashed multi-paragraph emails and a Windows startup crash.</p>
+      </description>
+    </release>
+    <release version="6.3.0" date="2026-06-09">
+      <description>
+        <p>French translation of the whole app. New About page with an optional Beta program. Link preview on hover. Dark-mode preference and email-sync fixes.</p>
+      </description>
+    </release>
+    <release version="6.2.0" date="2026-06-01">
+      <description>
+        <p>Ghosts view in Franz Mail surfaces cooling relationships, computed on-device. Bring-your-own Google Gemini key for the Pro assistant. Cmd+K searches inside WhatsApp messages.</p>
+      </description>
+    </release>
+    <release version="6.1.0" date="2026-05-27">
+      <description>
+        <p>Franz 6 ships natively on Linux as AppImage, .deb and snap on x64 and arm64, with system tray, autostart, live OS theme sync and franz:// / mailto: handlers. Mute-all-services button. Email search now reads the message body.</p>
+      </description>
+    </release>
+    <release version="6.0.0" date="2026-05-09">
+      <description>
+        <p>Franz 6 — a ground-up rebuild combining messaging, mail and AI in one window, marking ten years of Franz.</p>
+      </description>
+    </release>
 	<release version="5.11.0" date="2025-04-09"></release>
     <release version="5.10.0" date="2023-09-01">
       <description>

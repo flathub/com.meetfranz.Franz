@@ -24,13 +24,13 @@ modules:
   - name: franz-desktop
     buildsystem: simple
     build-commands:
-      - ar x franz_*.deb
-      - rm -f franz_*.deb
+      - ar x Franz_*.deb
+      - rm -f Franz_*.deb
       - tar xf data.tar.xz
-      - rm -f control.tar.gz data.tar.xz debian-binary
+      - rm -f control.tar.xz data.tar.xz debian-binary
       - cp -r usr/* opt/* /app
       - chmod -R a-s,go+rX,go-w /app/Franz
-      - rm -r /app/share/icons/hicolor/1024x1024
+      - rm -rf /app/share/icons/hicolor/1024x1024
       - desktop-file-edit --set-key=Exec --set-value='franz %U' /app/share/applications/franz.desktop
       - install franz.sh /app/bin/franz
       - install -Dm644 com.meetfranz.Franz.appdata.xml /app/share/appdata/com.meetfranz.Franz.appdata.xml
@@ -38,8 +38,8 @@ modules:
       - type: file
         only-arches:
           - x86_64
-        url: https://github.com/meetfranz/franz/releases/download/v5.11.0/franz_5.11.0_amd64.deb
-        sha256: e3e1de1fd958e7fd9fb304b0ccc3ccd48765963d35cd4ee79a52ce3187dc4ac5
+        url: https://github.com/meetfranz/franz-6/releases/download/v6.3.1/Franz_amd64.deb
+        sha256: 27c081d0610ad6d41c014316397a5a769b64c47e18013c364df431a18979f0c9
       - type: script
         dest-filename: franz.sh
         commands:
